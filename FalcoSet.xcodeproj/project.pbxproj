@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28979AAC24E82B0D000A0CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28979AAB24E82B0D000A0CBB /* AppDelegate.swift */; };
+		28979AAE24E82B0D000A0CBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28979AAD24E82B0D000A0CBB /* SceneDelegate.swift */; };
+		28979AB024E82B0D000A0CBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28979AAF24E82B0D000A0CBB /* ContentView.swift */; };
+		28979AB224E82B0D000A0CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28979AB124E82B0D000A0CBB /* Assets.xcassets */; };
+		28979AB524E82B0D000A0CBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28979AB424E82B0D000A0CBB /* Preview Assets.xcassets */; };
+		28979AB824E82B0D000A0CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28979AB624E82B0D000A0CBB /* LaunchScreen.storyboard */; };
+		28979AC324E82B0D000A0CBB /* FalcoSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28979AC224E82B0D000A0CBB /* FalcoSetTests.swift */; };
+		28979ACE24E82B0D000A0CBB /* FalcoSetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28979ACD24E82B0D000A0CBB /* FalcoSetUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28979ABF24E82B0D000A0CBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28979AA024E82B0D000A0CBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28979AA724E82B0D000A0CBB;
+			remoteInfo = FalcoSet;
+		};
+		28979ACA24E82B0D000A0CBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28979AA024E82B0D000A0CBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28979AA724E82B0D000A0CBB;
+			remoteInfo = FalcoSet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28979AA824E82B0D000A0CBB /* FalcoSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FalcoSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28979AAB24E82B0D000A0CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28979AAD24E82B0D000A0CBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28979AAF24E82B0D000A0CBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28979AB124E82B0D000A0CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28979AB424E82B0D000A0CBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28979AB724E82B0D000A0CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28979AB924E82B0D000A0CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28979ABE24E82B0D000A0CBB /* FalcoSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FalcoSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28979AC224E82B0D000A0CBB /* FalcoSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalcoSetTests.swift; sourceTree = "<group>"; };
+		28979AC424E82B0D000A0CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28979AC924E82B0D000A0CBB /* FalcoSetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FalcoSetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28979ACD24E82B0D000A0CBB /* FalcoSetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalcoSetUITests.swift; sourceTree = "<group>"; };
+		28979ACF24E82B0D000A0CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28979AA524E82B0D000A0CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28979ABB24E82B0D000A0CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28979AC624E82B0D000A0CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28979A9F24E82B0D000A0CBB = {
+			isa = PBXGroup;
+			children = (
+				28979AAA24E82B0D000A0CBB /* FalcoSet */,
+				28979AC124E82B0D000A0CBB /* FalcoSetTests */,
+				28979ACC24E82B0D000A0CBB /* FalcoSetUITests */,
+				28979AA924E82B0D000A0CBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28979AA924E82B0D000A0CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28979AA824E82B0D000A0CBB /* FalcoSet.app */,
+				28979ABE24E82B0D000A0CBB /* FalcoSetTests.xctest */,
+				28979AC924E82B0D000A0CBB /* FalcoSetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28979AAA24E82B0D000A0CBB /* FalcoSet */ = {
+			isa = PBXGroup;
+			children = (
+				28979AAB24E82B0D000A0CBB /* AppDelegate.swift */,
+				28979AAD24E82B0D000A0CBB /* SceneDelegate.swift */,
+				28979AAF24E82B0D000A0CBB /* ContentView.swift */,
+				28979AB124E82B0D000A0CBB /* Assets.xcassets */,
+				28979AB624E82B0D000A0CBB /* LaunchScreen.storyboard */,
+				28979AB924E82B0D000A0CBB /* Info.plist */,
+				28979AB324E82B0D000A0CBB /* Preview Content */,
+			);
+			path = FalcoSet;
+			sourceTree = "<group>";
+		};
+		28979AB324E82B0D000A0CBB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28979AB424E82B0D000A0CBB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28979AC124E82B0D000A0CBB /* FalcoSetTests */ = {
+			isa = PBXGroup;
+			children = (
+				28979AC224E82B0D000A0CBB /* FalcoSetTests.swift */,
+				28979AC424E82B0D000A0CBB /* Info.plist */,
+			);
+			path = FalcoSetTests;
+			sourceTree = "<group>";
+		};
+		28979ACC24E82B0D000A0CBB /* FalcoSetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28979ACD24E82B0D000A0CBB /* FalcoSetUITests.swift */,
+				28979ACF24E82B0D000A0CBB /* Info.plist */,
+			);
+			path = FalcoSetUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28979AA724E82B0D000A0CBB /* FalcoSet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28979AD224E82B0D000A0CBB /* Build configuration list for PBXNativeTarget "FalcoSet" */;
+			buildPhases = (
+				28979AA424E82B0D000A0CBB /* Sources */,
+				28979AA524E82B0D000A0CBB /* Frameworks */,
+				28979AA624E82B0D000A0CBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FalcoSet;
+			productName = FalcoSet;
+			productReference = 28979AA824E82B0D000A0CBB /* FalcoSet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28979ABD24E82B0D000A0CBB /* FalcoSetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28979AD524E82B0D000A0CBB /* Build configuration list for PBXNativeTarget "FalcoSetTests" */;
+			buildPhases = (
+				28979ABA24E82B0D000A0CBB /* Sources */,
+				28979ABB24E82B0D000A0CBB /* Frameworks */,
+				28979ABC24E82B0D000A0CBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28979AC024E82B0D000A0CBB /* PBXTargetDependency */,
+			);
+			name = FalcoSetTests;
+			productName = FalcoSetTests;
+			productReference = 28979ABE24E82B0D000A0CBB /* FalcoSetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28979AC824E82B0D000A0CBB /* FalcoSetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28979AD824E82B0D000A0CBB /* Build configuration list for PBXNativeTarget "FalcoSetUITests" */;
+			buildPhases = (
+				28979AC524E82B0D000A0CBB /* Sources */,
+				28979AC624E82B0D000A0CBB /* Frameworks */,
+				28979AC724E82B0D000A0CBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28979ACB24E82B0D000A0CBB /* PBXTargetDependency */,
+			);
+			name = FalcoSetUITests;
+			productName = FalcoSetUITests;
+			productReference = 28979AC924E82B0D000A0CBB /* FalcoSetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28979AA024E82B0D000A0CBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Mata;
+				TargetAttributes = {
+					28979AA724E82B0D000A0CBB = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					28979ABD24E82B0D000A0CBB = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 28979AA724E82B0D000A0CBB;
+					};
+					28979AC824E82B0D000A0CBB = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 28979AA724E82B0D000A0CBB;
+					};
+				};
+			};
+			buildConfigurationList = 28979AA324E82B0D000A0CBB /* Build configuration list for PBXProject "FalcoSet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28979A9F24E82B0D000A0CBB;
+			productRefGroup = 28979AA924E82B0D000A0CBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28979AA724E82B0D000A0CBB /* FalcoSet */,
+				28979ABD24E82B0D000A0CBB /* FalcoSetTests */,
+				28979AC824E82B0D000A0CBB /* FalcoSetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28979AA624E82B0D000A0CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28979AB824E82B0D000A0CBB /* LaunchScreen.storyboard in Resources */,
+				28979AB524E82B0D000A0CBB /* Preview Assets.xcassets in Resources */,
+				28979AB224E82B0D000A0CBB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28979ABC24E82B0D000A0CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28979AC724E82B0D000A0CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28979AA424E82B0D000A0CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28979AAC24E82B0D000A0CBB /* AppDelegate.swift in Sources */,
+				28979AAE24E82B0D000A0CBB /* SceneDelegate.swift in Sources */,
+				28979AB024E82B0D000A0CBB /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28979ABA24E82B0D000A0CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28979AC324E82B0D000A0CBB /* FalcoSetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28979AC524E82B0D000A0CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28979ACE24E82B0D000A0CBB /* FalcoSetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28979AC024E82B0D000A0CBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28979AA724E82B0D000A0CBB /* FalcoSet */;
+			targetProxy = 28979ABF24E82B0D000A0CBB /* PBXContainerItemProxy */;
+		};
+		28979ACB24E82B0D000A0CBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28979AA724E82B0D000A0CBB /* FalcoSet */;
+			targetProxy = 28979ACA24E82B0D000A0CBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28979AB624E82B0D000A0CBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28979AB724E82B0D000A0CBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28979AD024E82B0D000A0CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28979AD124E82B0D000A0CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28979AD324E82B0D000A0CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FalcoSet/Preview Content\"";
+				DEVELOPMENT_TEAM = R3RPTJX8C6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FalcoSet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mata.FalcoSet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28979AD424E82B0D000A0CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FalcoSet/Preview Content\"";
+				DEVELOPMENT_TEAM = R3RPTJX8C6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FalcoSet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mata.FalcoSet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28979AD624E82B0D000A0CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R3RPTJX8C6;
+				INFOPLIST_FILE = FalcoSetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mata.FalcoSetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FalcoSet.app/FalcoSet";
+			};
+			name = Debug;
+		};
+		28979AD724E82B0D000A0CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R3RPTJX8C6;
+				INFOPLIST_FILE = FalcoSetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mata.FalcoSetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FalcoSet.app/FalcoSet";
+			};
+			name = Release;
+		};
+		28979AD924E82B0D000A0CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R3RPTJX8C6;
+				INFOPLIST_FILE = FalcoSetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mata.FalcoSetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FalcoSet;
+			};
+			name = Debug;
+		};
+		28979ADA24E82B0D000A0CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R3RPTJX8C6;
+				INFOPLIST_FILE = FalcoSetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mata.FalcoSetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FalcoSet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28979AA324E82B0D000A0CBB /* Build configuration list for PBXProject "FalcoSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28979AD024E82B0D000A0CBB /* Debug */,
+				28979AD124E82B0D000A0CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28979AD224E82B0D000A0CBB /* Build configuration list for PBXNativeTarget "FalcoSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28979AD324E82B0D000A0CBB /* Debug */,
+				28979AD424E82B0D000A0CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28979AD524E82B0D000A0CBB /* Build configuration list for PBXNativeTarget "FalcoSetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28979AD624E82B0D000A0CBB /* Debug */,
+				28979AD724E82B0D000A0CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28979AD824E82B0D000A0CBB /* Build configuration list for PBXNativeTarget "FalcoSetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28979AD924E82B0D000A0CBB /* Debug */,
+				28979ADA24E82B0D000A0CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28979AA024E82B0D000A0CBB /* Project object */;
+}
