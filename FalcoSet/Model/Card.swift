@@ -13,7 +13,7 @@ struct Card<CardContentOne, CardContentTwo, CardContentThree, CardContentFour> {
     var contentTwo: CardContentTwo
     var contentThree: CardContentThree
     var contentFour: CardContentFour
-    
     var id = UUID()
+    
     var isSelected: Bool
 }
