@@ -12,10 +12,10 @@ struct DiamondShape: Shape {
     func path(in rect: CGRect) -> Path {
         var drawingPath = Path()
         
-        let northPoint = CGPoint(x: rect.midX,y: rect.midY - rect.height * distanceFromCenterRatio)
-        let westPoint = CGPoint(x: rect.midX - rect.width * distanceFromCenterRatio, y: rect.midY)
-        let eastPoint = CGPoint(x: rect.midX + rect.width * distanceFromCenterRatio, y: rect.midY)
-        let southPoint = CGPoint(x: rect.midX,y: rect.midY + rect.height * distanceFromCenterRatio)
+        let northPoint = CGPoint(x: rect.midX,y: rect.midY - rect.height * heightDistanceFromCenterRatio)
+        let westPoint = CGPoint(x: rect.midX - rect.width * widthDistanceFromCenterRatio, y: rect.midY)
+        let eastPoint = CGPoint(x: rect.midX + rect.width * widthDistanceFromCenterRatio, y: rect.midY)
+        let southPoint = CGPoint(x: rect.midX,y: rect.midY + rect.height * heightDistanceFromCenterRatio)
     
         drawingPath.addLines([northPoint, westPoint, southPoint, eastPoint, northPoint])
         
@@ -25,7 +25,8 @@ struct DiamondShape: Shape {
     
     // MARK: - Drawing Constant
     
-    let distanceFromCenterRatio: CGFloat = 0.25
+    let heightDistanceFromCenterRatio: CGFloat = 0.15
+    let widthDistanceFromCenterRatio: CGFloat = 0.35
     
     
 }
