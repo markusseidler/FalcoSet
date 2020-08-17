@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct CardModel<contentOne, contentTwo, contentThree, contentFour> {
+struct CardModel<ContentOne, ContentTwo, ContentThree, ContentFour> {
     
-    private(set) var cards: Array<Card<contentOne, contentTwo, contentThree, contentFour>>
+    private(set) var cards: [Card<ContentOne, ContentTwo, ContentThree, ContentFour>]
     
     private var cardsDealt: [Int]? {
         get {
@@ -21,6 +21,21 @@ struct CardModel<contentOne, contentTwo, contentThree, contentFour> {
                 cards[index].isDealt = true
             }
         }
+    }
+    
+    init(symbolColors contentOneInput: [ContentOne], symbolCountsPerCard contentTwoInput: [ContentTwo], symbolShadings contentThreeInput: [ContentThree], symbolShapes contentFourInput: [ContentFour]) {
+        cards = [Card]()
+        for contentOne in contentOneInput {
+            for contentTwo in contentTwoInput {
+                for contentThree in contentThreeInput {
+                    for contentFour in contentFourInput {
+                        cards.append(Card(contentOne: contentOne, contentTwo: contentTwo, contentThree: contentThree, contentFour: contentFour, isSelected: false, isDealt: false, isMatched: false))
+                    }
+                }
+            }
+        }
+        
+        cards.shuffle()
     }
     
     

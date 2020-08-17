@@ -8,14 +8,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
+class SetGamePresenter  {
+//
+//    private static func createSetGame() -> CardModel<UIColor, Int, CGFloat, AnyShape> {
+//
+//    }
+//
+    
+    
     var body: some View {
         Text("Hello, World!")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SetGamePresenter_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SetGamePresenter()
     }
 }
