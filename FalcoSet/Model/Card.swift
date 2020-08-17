@@ -16,4 +16,6 @@ struct Card<CardContentOne, CardContentTwo, CardContentThree, CardContentFour> {
     var id = UUID()
     
     var isSelected: Bool
+    var isDealt: Bool
+    var isMatched: Bool
 }

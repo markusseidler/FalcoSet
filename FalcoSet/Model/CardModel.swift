@@ -12,6 +12,21 @@ struct CardModel<contentOne, contentTwo, contentThree, contentFour> {
     
     private(set) var cards: Array<Card<contentOne, contentTwo, contentThree, contentFour>>
     
+    private var cardsDealt: [Int]? {
+        get {
+            cards.indices.filter {cards[$0].isDealt}
+        }
+        set {
+            for index in cards.indices {
+                cards[index].isDealt = true
+            }
+        }
+    }
+    
+    
+    
+    
+    
     
 }
 

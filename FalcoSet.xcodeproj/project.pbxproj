@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		285AF7D924E83342000544A8 /* ColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AF7D824E83342000544A8 /* ColorEnum.swift */; };
+		285AF7D924E83342000544A8 /* SetCardColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AF7D824E83342000544A8 /* SetCardColor.swift */; };
+		2897387C24EAB1BA003C11C9 /* SetCardCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897387B24EAB1BA003C11C9 /* SetCardCount.swift */; };
+		2897387E24EAB38B003C11C9 /* SetCardShading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897387D24EAB38B003C11C9 /* SetCardShading.swift */; };
+		2897388024EAB5AD003C11C9 /* SetCardShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897387F24EAB5AD003C11C9 /* SetCardShapes.swift */; };
+		2897388224EAB8D3003C11C9 /* DiamondShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897388124EAB8D3003C11C9 /* DiamondShape.swift */; };
 		28979AAC24E82B0D000A0CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28979AAB24E82B0D000A0CBB /* AppDelegate.swift */; };
 		28979AAE24E82B0D000A0CBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28979AAD24E82B0D000A0CBB /* SceneDelegate.swift */; };
 		28979AB024E82B0D000A0CBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28979AAF24E82B0D000A0CBB /* ContentView.swift */; };
@@ -39,7 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		285AF7D824E83342000544A8 /* ColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEnum.swift; sourceTree = "<group>"; };
+		285AF7D824E83342000544A8 /* SetCardColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardColor.swift; sourceTree = "<group>"; };
+		2897387B24EAB1BA003C11C9 /* SetCardCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardCount.swift; sourceTree = "<group>"; };
+		2897387D24EAB38B003C11C9 /* SetCardShading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardShading.swift; sourceTree = "<group>"; };
+		2897387F24EAB5AD003C11C9 /* SetCardShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardShapes.swift; sourceTree = "<group>"; };
+		2897388124EAB8D3003C11C9 /* DiamondShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondShape.swift; sourceTree = "<group>"; };
 		28979AA824E82B0D000A0CBB /* FalcoSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FalcoSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28979AAB24E82B0D000A0CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28979AAD24E82B0D000A0CBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,7 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				28979AAF24E82B0D000A0CBB /* ContentView.swift */,
-				285AF7D824E83342000544A8 /* ColorEnum.swift */,
+				285AF7D824E83342000544A8 /* SetCardColor.swift */,
+				2897387B24EAB1BA003C11C9 /* SetCardCount.swift */,
+				2897387D24EAB38B003C11C9 /* SetCardShading.swift */,
+				2897387F24EAB5AD003C11C9 /* SetCardShapes.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -159,6 +170,7 @@
 		28979ADE24E82E2A000A0CBB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2897388124EAB8D3003C11C9 /* DiamondShape.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,11 +317,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				28979AAC24E82B0D000A0CBB /* AppDelegate.swift in Sources */,
+				2897387C24EAB1BA003C11C9 /* SetCardCount.swift in Sources */,
+				2897388224EAB8D3003C11C9 /* DiamondShape.swift in Sources */,
 				28979AAE24E82B0D000A0CBB /* SceneDelegate.swift in Sources */,
+				2897387E24EAB38B003C11C9 /* SetCardShading.swift in Sources */,
 				28979AB024E82B0D000A0CBB /* ContentView.swift in Sources */,
 				28979AE124E82EA7000A0CBB /* Card.swift in Sources */,
-				285AF7D924E83342000544A8 /* ColorEnum.swift in Sources */,
+				285AF7D924E83342000544A8 /* SetCardColor.swift in Sources */,
 				28979AE324E82F78000A0CBB /* CardModel.swift in Sources */,
+				2897388024EAB5AD003C11C9 /* SetCardShapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
