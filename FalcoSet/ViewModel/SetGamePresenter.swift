@@ -9,11 +9,15 @@
 import SwiftUI
 
 class SetGamePresenter  {
-//
-//    private static func createSetGame() -> CardModel<UIColor, Int, CGFloat, AnyShape> {
-//
-//    }
-//
+
+    private static func createSetGame() -> CardModel<UIColor, Int, CGFloat, AnyView> {
+        
+        let theme = SetTheme.themeStandard
+        
+        return CardModel(symbolColors: theme.colorTheme, symbolCountsPerCard: theme.countTheme, symbolShadings: theme.shadingTheme, symbolShapes: theme.shapesTheme)
+
+    }
+
     
     
     var body: some View {
