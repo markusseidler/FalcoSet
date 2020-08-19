@@ -9,24 +9,23 @@
 import SwiftUI
 
 class SetGamePresenter  {
+    
+    private var model = SetGamePresenter.createSetGame()
 
-    private static func createSetGame() -> CardModel<UIColor, Int, CGFloat, AnyView> {
+    private static func createSetGame() -> CardModel<UIColor, Int, CGFloat, String> {
         
         let theme = SetTheme.themeStandard
         
         return CardModel(symbolColors: theme.colorTheme, symbolCountsPerCard: theme.countTheme, symbolShadings: theme.shadingTheme, symbolShapes: theme.shapesTheme)
-
+    }
+    
+    // MARK: - Public access to model
+    
+    var cards: [Card<UIColor, Int, CGFloat, String>] {
+        model.cards
     }
 
     
-    
-    var body: some View {
-        Text("Hello, World!")
-    }
+   
 }
 
-struct SetGamePresenter_Previews: PreviewProvider {
-    static var previews: some View {
-        SetGamePresenter()
-    }
-}

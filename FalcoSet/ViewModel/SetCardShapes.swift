@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-enum SetCardShapes {
+enum SetCardShapes: String {
     case diamond
     case rectangle
     case roundedRectangle

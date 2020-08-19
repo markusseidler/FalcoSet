@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		285AF7D924E83342000544A8 /* SetCardColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AF7D824E83342000544A8 /* SetCardColor.swift */; };
+		2872783D24ED192C00589504 /* MainGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2872783C24ED192C00589504 /* MainGameView.swift */; };
+		2872784024ED215500589504 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2872783F24ED215500589504 /* CardView.swift */; };
 		2897387C24EAB1BA003C11C9 /* SetCardCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897387B24EAB1BA003C11C9 /* SetCardCount.swift */; };
 		2897387E24EAB38B003C11C9 /* SetCardShading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897387D24EAB38B003C11C9 /* SetCardShading.swift */; };
 		2897388024EAB5AD003C11C9 /* SetCardShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897387F24EAB5AD003C11C9 /* SetCardShapes.swift */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		285AF7D824E83342000544A8 /* SetCardColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardColor.swift; sourceTree = "<group>"; };
+		2872783C24ED192C00589504 /* MainGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameView.swift; sourceTree = "<group>"; };
+		2872783F24ED215500589504 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		2897387B24EAB1BA003C11C9 /* SetCardCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardCount.swift; sourceTree = "<group>"; };
 		2897387D24EAB38B003C11C9 /* SetCardShading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardShading.swift; sourceTree = "<group>"; };
 		2897387F24EAB5AD003C11C9 /* SetCardShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardShapes.swift; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				2897388124EAB8D3003C11C9 /* DiamondShape.swift */,
+				2872783C24ED192C00589504 /* MainGameView.swift */,
+				2872783F24ED215500589504 /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,7 +328,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2872784024ED215500589504 /* CardView.swift in Sources */,
 				28979AAC24E82B0D000A0CBB /* AppDelegate.swift in Sources */,
+				2872783D24ED192C00589504 /* MainGameView.swift in Sources */,
 				289BD30624EB9CB000E5127E /* SetTheme.swift in Sources */,
 				2897387C24EAB1BA003C11C9 /* SetCardCount.swift in Sources */,
 				2897388224EAB8D3003C11C9 /* DiamondShape.swift in Sources */,

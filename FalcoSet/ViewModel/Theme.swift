@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct Theme {
-    let colorTheme: [SetCardColor]
-    let countTheme: [SetCardCount]
-    let shadingTheme: [SetCardShading]
-    let shapesTheme: [SetCardShapes]
+    let colorTheme: [SetCardColor.RawValue]
+    let countTheme: [SetCardCount.RawValue]
+    let shadingTheme: [SetCardShading.RawValue]
+    let shapesTheme: [SetCardShapes.RawValue]
 }
