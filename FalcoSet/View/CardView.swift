@@ -14,10 +14,12 @@ struct CardView: View {
     var body: some View {
          
         ZStack {
-            RoundedRectangle(cornerRadius: 20).fill(Color(card.contentOne))
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color(card.contentOne))
             Text(card.contentFour)
             
         }
+        .padding()
     
     }
 }

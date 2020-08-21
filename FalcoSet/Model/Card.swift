@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Card<CardContentOne, CardContentTwo, CardContentThree, CardContentFour> {
+struct Card<CardContentOne, CardContentTwo, CardContentThree, CardContentFour>: Identifiable {
     var contentOne: CardContentOne
     var contentTwo: CardContentTwo
     var contentThree: CardContentThree

@@ -6,6 +6,8 @@
 //  Copyright © 2020 Mata. All rights reserved.
 //
 
+// TODO: Declare ForEach to present card... then think about Grid and GridLayout again.
+
 import SwiftUI
 
 struct MainGameView: View {
@@ -13,7 +15,14 @@ struct MainGameView: View {
     var gamePresenter: SetGamePresenter
     
     var body: some View {
-        Text("Test")
+        VStack {
+//            ForEach(gamePresenter.cards) { card in
+//                CardView(card: card)
+//            }
+            GridMarkus(gamePresenter.cards) { card in
+                CardView(card: card)
+            }
+        }
     }
 }
 
