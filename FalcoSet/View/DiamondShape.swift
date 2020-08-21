@@ -25,8 +25,8 @@ struct DiamondShape: Shape {
     
     // MARK: - Drawing Constant
     
-    let heightDistanceFromCenterRatio: CGFloat = 0.15
-    let widthDistanceFromCenterRatio: CGFloat = 0.35
+    let heightDistanceFromCenterRatio: CGFloat = 0.20
+    let widthDistanceFromCenterRatio: CGFloat = 0.50
     
     
 }

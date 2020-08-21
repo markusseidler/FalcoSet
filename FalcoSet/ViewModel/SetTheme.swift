@@ -14,6 +14,8 @@ struct SetTheme {
         colorTheme: [SetCardColor.red.rawValue, SetCardColor.green.rawValue, SetCardColor.blue.rawValue],
         countTheme: [SetCardCount.one.rawValue, SetCardCount.two.rawValue, SetCardCount.three.rawValue],
         shadingTheme: [SetCardShading.transparent.rawValue, SetCardShading.semiTransparent.rawValue, SetCardShading.solid.rawValue],
-        shapesTheme: [SetCardShapes.diamond.rawValue, SetCardShapes.roundedRectangle.rawValue, SetCardShapes.rectangle.rawValue])
-    
+        shapesTheme: [SetCardShapes.diamond.rawValue, SetCardShapes.roundedRectangle.rawValue, SetCardShapes.rectangle.rawValue]
+    )
+//    shapesTheme: [SetCardShapes.diamond.rawValue]
+//    )
 }

@@ -10,6 +10,7 @@
 		2806FFB724EF7573008D010F /* GridLayoutMarkus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806FFB624EF7573008D010F /* GridLayoutMarkus.swift */; };
 		2806FFB924EF7997008D010F /* GridMarkus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806FFB824EF7997008D010F /* GridMarkus.swift */; };
 		2806FFBB24EF7CAF008D010F /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806FFBA24EF7CAF008D010F /* Array+Identifiable.swift */; };
+		2818D0B824EFCDFE00340A9D /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2818D0B724EFCDFE00340A9D /* PlayView.swift */; };
 		285AF7D924E83342000544A8 /* SetCardColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AF7D824E83342000544A8 /* SetCardColor.swift */; };
 		2872783D24ED192C00589504 /* MainGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2872783C24ED192C00589504 /* MainGameView.swift */; };
 		2872784024ED215500589504 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2872783F24ED215500589504 /* CardView.swift */; };
@@ -53,6 +54,7 @@
 		2806FFB624EF7573008D010F /* GridLayoutMarkus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutMarkus.swift; sourceTree = "<group>"; };
 		2806FFB824EF7997008D010F /* GridMarkus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridMarkus.swift; sourceTree = "<group>"; };
 		2806FFBA24EF7CAF008D010F /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
+		2818D0B724EFCDFE00340A9D /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		285AF7D824E83342000544A8 /* SetCardColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardColor.swift; sourceTree = "<group>"; };
 		2872783C24ED192C00589504 /* MainGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameView.swift; sourceTree = "<group>"; };
 		2872783F24ED215500589504 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2818D0B624EFCDE900340A9D /* PlayingAround */ = {
+			isa = PBXGroup;
+			children = (
+				2818D0B724EFCDFE00340A9D /* PlayView.swift */,
+			);
+			path = PlayingAround;
+			sourceTree = "<group>";
+		};
 		28979A9F24E82B0D000A0CBB = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 		28979AAA24E82B0D000A0CBB /* FalcoSet */ = {
 			isa = PBXGroup;
 			children = (
+				2818D0B624EFCDE900340A9D /* PlayingAround */,
 				28979ADF24E82E2F000A0CBB /* Model */,
 				28979ADE24E82E2A000A0CBB /* View */,
 				28979ADD24E82E22000A0CBB /* ViewModel */,
@@ -343,6 +354,7 @@
 				2872783D24ED192C00589504 /* MainGameView.swift in Sources */,
 				2806FFB924EF7997008D010F /* GridMarkus.swift in Sources */,
 				289BD30624EB9CB000E5127E /* SetTheme.swift in Sources */,
+				2818D0B824EFCDFE00340A9D /* PlayView.swift in Sources */,
 				2897387C24EAB1BA003C11C9 /* SetCardCount.swift in Sources */,
 				2897388224EAB8D3003C11C9 /* DiamondShape.swift in Sources */,
 				2806FFBB24EF7CAF008D010F /* Array+Identifiable.swift in Sources */,

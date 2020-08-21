@@ -22,6 +22,7 @@ struct MainGameView: View {
             GridMarkus(gamePresenter.cards) { card in
                 CardView(card: card)
             }
+            .padding()
         }
     }
 }
