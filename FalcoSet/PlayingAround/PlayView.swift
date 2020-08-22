@@ -12,12 +12,19 @@ struct PlayView: View {
     var playArray = 1
     
     var body: some View {
+        
         VStack {
-            ForEach(0..<playArray) {_ in
-                Rectangle().padding()
+            ForEach(0..<self.playArray) {_ in
+                
+                GeometryReader { geometry in
+                    Rectangle().frame(height: geometry.size.width / 2)
+                        .padding()
+                }
+                .padding()
             }
-            .padding()
+            
         }
+        
     }
 }
 

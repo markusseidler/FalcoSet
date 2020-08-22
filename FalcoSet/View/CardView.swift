@@ -31,27 +31,36 @@ struct CardView: View {
     
     @ViewBuilder
     private func cardBuilder() -> some View {
-        
-        VStack {
+        ZStack {
+        VStack (alignment: .center){
             ForEach(0..<self.card.contentTwo) { index in
                 
-                GeometryReader { geometry in
-                
                 if self.card.contentFour == SetCardShapes.diamond.rawValue {
-                    DiamondShape()
+                    GeometryReader { geometry in
+                        DiamondShape()
+                    }
                 }
                 
                 else if self.card.contentFour == SetCardShapes.rectangle.rawValue {
-
-                    Rectangle().fill(Color.black).frame(height: (geometry.size.width / 2))
-              
-                } else {
-                    Text("\(index)")
                     
+                    GeometryReader { geometry in
+                        Rectangle().fill(Color.black)
+//                            .frame(height: (geometry.size.width / 2))
+                        
                     }
+                        
+                }
+                else if self.card.contentFour == SetCardShapes.roundedRectangle.rawValue {
                     
+                    GeometryReader { geometry in
+                        
+                        RoundedRectangle(cornerRadius: self.roundedRectangleCornerRadius).fill(Color.black)
+                        }
+                    }
                 }
             }
+        .padding()
+            
         }
     }
         
@@ -89,8 +98,8 @@ struct CardView: View {
     // MARK: View Constants
     
     let fontSizeRatio: CGFloat = 0.1
-    let spacingBetweenCards: CGFloat = 3.0
-    let roundedRectangleCornerRadius: CGFloat = 5.0
+    let spacingBetweenCards: CGFloat = 10.0
+    let roundedRectangleCornerRadius: CGFloat = 50.0
 }
 
 

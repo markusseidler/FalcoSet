@@ -9,8 +9,16 @@
 import SwiftUI
 
 struct DiamondShape: Shape {
+    
+    // MARK - Drawing Variables
+    
+    var heightDistanceFromCenterRatio: CGFloat = 0.40
+    var widthDistanceFromCenterRatio: CGFloat = 0.70
+    
     func path(in rect: CGRect) -> Path {
         var drawingPath = Path()
+        
+        
         
         let northPoint = CGPoint(x: rect.midX,y: rect.midY - rect.height * heightDistanceFromCenterRatio)
         let westPoint = CGPoint(x: rect.midX - rect.width * widthDistanceFromCenterRatio, y: rect.midY)
@@ -25,8 +33,8 @@ struct DiamondShape: Shape {
     
     // MARK: - Drawing Constant
     
-    let heightDistanceFromCenterRatio: CGFloat = 0.20
-    let widthDistanceFromCenterRatio: CGFloat = 0.50
+//    let heightDistanceFromCenterRatio: CGFloat = 0.20
+//    let widthDistanceFromCenterRatio: CGFloat = 0.50
     
     
 }
