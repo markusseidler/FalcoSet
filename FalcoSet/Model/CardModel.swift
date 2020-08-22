@@ -12,19 +12,27 @@ struct CardModel<ContentOne, ContentTwo, ContentThree, ContentFour> {
     
     private(set) var cards: [Card<ContentOne, ContentTwo, ContentThree, ContentFour>]
     
-    private var cardsDealt: [Int]? {
+    private(set) var cardsDealt: [Int]? {
         get {
             cards.indices.filter {cards[$0].isDealt}
         }
         set {
-            for index in cards.indices {
+            for index in newValue! {
                 cards[index].isDealt = true
             }
         }
     }
     
+    private var numberOfCards: Int {
+           cards.count
+       }
+    
+    private let initialNumbersOfCardsDealt = 12
+       
+
     init(symbolColors contentOneInput: [ContentOne], symbolCountsPerCard contentTwoInput: [ContentTwo], symbolShadings contentThreeInput: [ContentThree], symbolShapes contentFourInput: [ContentFour]) {
         cards = [Card]()
+        
         for contentOne in contentOneInput {
             for contentTwo in contentTwoInput {
                 for contentThree in contentThreeInput {
@@ -36,14 +44,28 @@ struct CardModel<ContentOne, ContentTwo, ContentThree, ContentFour> {
         }
         
         cards.shuffle()
+        cardsDealt = setCardsToDealRandomly()
+        
+    }
+
+    
+    private func setCardsToDealRandomly() -> [Int]{
+        
+        var randomSet = Set<Int>()
+        
+        while randomSet.count < initialNumbersOfCardsDealt {
+            randomSet.insert(Int.random(in: 0..<cards.count))
+        }
+        
+        return Array(randomSet)
+    
     }
     
-    
-    
-    
-    
-    
 }
+
+
+
+
 
 
 

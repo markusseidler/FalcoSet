@@ -27,7 +27,15 @@ struct MainGameView_Previews: PreviewProvider {
     static var previews: some View {
         
         let gamePresenter = SetGamePresenter()
-        
-        return MainGameView(gamePresenter: gamePresenter)
+        return MainGameView(gamePresenter: gamePresenter).previewDevice(PreviewDevice(rawValue: "iPhone 11"))
+
+//
+//        ForEach(["iPhone 11", "iPhone 8", "iPhone 11 Pro Max", "iPad Pro(12.9-inch)"], id: \.self) { deviceName in
+//            NavigationView {
+//                MainGameView(gamePresenter: SetGamePresenter()).previewDevice(PreviewDevice(rawValue: deviceName)).previewDisplayName(deviceName)
+//            }
+//        }
+    
+    
     }
 }

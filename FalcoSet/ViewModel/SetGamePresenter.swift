@@ -20,23 +20,9 @@ class SetGamePresenter  {
     }
     
     // MARK: - Public access to model
-    
-    let numberOfCardsPresented = 12
-    
+
     var cards: [Card<UIColor, Int, Double, String>] {
-        
-        var randomCards = [Card<UIColor, Int, Double, String>]()
-        
-        while randomCards.count < numberOfCardsPresented {
-            let newCard = model.cards.randomElement()!
-            
-            if randomCards.findIndexOfElement(newCard) == nil {
-                randomCards.append(newCard)
-            }
-        }
-    
-        return randomCards
-        
+        model.cards.filter() {$0.isDealt}
     }
    
 }
