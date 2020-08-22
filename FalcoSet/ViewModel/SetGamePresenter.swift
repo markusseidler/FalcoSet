@@ -24,6 +24,8 @@ class SetGamePresenter  {
     var cards: [Card<UIColor, Int, CGFloat, String>] {
         model.cards
     }
+    
+    var exampleCards = [Card<UIColor, Int, CGFloat, String>]()
 
     
    
