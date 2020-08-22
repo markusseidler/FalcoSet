@@ -21,7 +21,7 @@ class SetGamePresenter  {
     
     // MARK: - Public access to model
     
-    let numberOfCardsPresented = 33
+    let numberOfCardsPresented = 12
     
     var cards: [Card<UIColor, Int, Double, String>] {
         

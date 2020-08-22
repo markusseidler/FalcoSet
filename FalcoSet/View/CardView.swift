@@ -29,10 +29,10 @@ struct CardView: View {
                     shapeString: self.card.contentFour,
                     color: self.card.contentOne,
                     shading: self.card.contentThree)
-                
+                    .padding()
             }
         }
-        .padding()
+//        .padding()
     }
     
     @ViewBuilder
@@ -41,20 +41,20 @@ struct CardView: View {
             ZStack{
                 DiamondShape().fill().opacity(shading)
                 DiamondShape().stroke(lineWidth: strokeLineWidth)
-            }
+                }
             .foregroundColor(Color(color))
         } else if shapeString == SetCardShapes.rectangle.rawValue {
             ZStack {
                 Rectangle().fill().opacity(shading)
                 Rectangle().stroke(lineWidth: strokeLineWidth)
-            }
+                }
             .foregroundColor(Color(color))
             
         } else if shapeString == SetCardShapes.roundedRectangle.rawValue {
             ZStack {
                 RoundedRectangle(cornerRadius: rRectCRShape).fill().opacity(shading)
                 RoundedRectangle(cornerRadius: rRectCRShape).stroke(lineWidth: strokeLineWidth)
-            }
+                }
             .foregroundColor(Color(color))
             
         }

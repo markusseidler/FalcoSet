@@ -12,8 +12,8 @@ struct DiamondShape: Shape {
     
     // MARK - Drawing Variables
     
-    var heightDistanceFromCenterRatio: CGFloat = 0.40
-    var widthDistanceFromCenterRatio: CGFloat = 0.70
+    var heightDistanceFromCenterRatio: CGFloat = 0.30
+    var widthDistanceFromCenterRatio: CGFloat = 0.50
     
     func path(in rect: CGRect) -> Path {
         var drawingPath = Path()
