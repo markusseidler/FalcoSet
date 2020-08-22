@@ -12,7 +12,7 @@ class SetGamePresenter  {
     
     private var model = SetGamePresenter.createSetGame()
 
-    private static func createSetGame() -> CardModel<UIColor, Int, CGFloat, String> {
+    private static func createSetGame() -> CardModel<UIColor, Int, Double, String> {
         
         let theme = SetTheme.themeStandard
         
@@ -21,13 +21,23 @@ class SetGamePresenter  {
     
     // MARK: - Public access to model
     
-    var cards: [Card<UIColor, Int, CGFloat, String>] {
-        model.cards
+    let numberOfCardsPresented = 33
+    
+    var cards: [Card<UIColor, Int, Double, String>] {
+        
+        var randomCards = [Card<UIColor, Int, Double, String>]()
+        
+        while randomCards.count < numberOfCardsPresented {
+            let newCard = model.cards.randomElement()!
+            
+            if randomCards.findIndexOfElement(newCard) == nil {
+                randomCards.append(newCard)
+            }
+        }
+    
+        return randomCards
+        
     }
-    
-    var exampleCards = [Card<UIColor, Int, CGFloat, String>]()
-
-    
    
 }
 

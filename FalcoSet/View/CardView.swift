@@ -9,40 +9,54 @@
 import SwiftUI
 
 struct CardView: View {
-    var card: Card<UIColor, Int, CGFloat, String>
+    var card: Card<UIColor, Int, Double, String>
     
     var body: some View {
     
             ZStack {
-                RoundedRectangle(cornerRadius: self.roundedRectangleCornerRadius).stroke(Color.black)
+                RoundedRectangle(cornerRadius: self.rRectCRCard).stroke(Color.black)
                 
                 self.cardBuilder()
             }
             .padding(self.spacingBetweenCards)
     }
     
-    // TODO: - fix the shapes postions and size with geometry reader?
-    
     @ViewBuilder
     private func cardBuilder() -> some View {
         VStack (alignment: .center){
             ForEach(0..<self.card.contentTwo) { _ in
+                self.shapeSelector(
+                    shapeString: self.card.contentFour,
+                    color: self.card.contentOne,
+                    shading: self.card.contentThree)
                 
-                self.shapeSelector(shapeString: self.card.contentFour)
-//
-                }
             }
+        }
         .padding()
     }
     
     @ViewBuilder
-    func shapeSelector (shapeString: String) -> some View {
+    func shapeSelector (shapeString: String, color: UIColor, shading: Double) -> some View {
         if shapeString == SetCardShapes.diamond.rawValue {
-            DiamondShape()
+            ZStack{
+                DiamondShape().fill().opacity(shading)
+                DiamondShape().stroke(lineWidth: strokeLineWidth)
+            }
+            .foregroundColor(Color(color))
         } else if shapeString == SetCardShapes.rectangle.rawValue {
-            Rectangle()
+            ZStack {
+                Rectangle().fill().opacity(shading)
+                Rectangle().stroke(lineWidth: strokeLineWidth)
+            }
+            .foregroundColor(Color(color))
+            
         } else if shapeString == SetCardShapes.roundedRectangle.rawValue {
-            RoundedRectangle(cornerRadius: roundedRectangleCornerRadius)
+            ZStack {
+                RoundedRectangle(cornerRadius: rRectCRShape).fill().opacity(shading)
+                RoundedRectangle(cornerRadius: rRectCRShape).stroke(lineWidth: strokeLineWidth)
+            }
+            .foregroundColor(Color(color))
+            
         }
     }
         
@@ -53,14 +67,16 @@ struct CardView: View {
     
     let fontSizeRatio: CGFloat = 0.1
     let spacingBetweenCards: CGFloat = 10.0
-    let roundedRectangleCornerRadius: CGFloat = 50.0
+    let rRectCRShape: CGFloat = 50.0
+    let rRectCRCard: CGFloat = 10.0
+    let strokeLineWidth: CGFloat = 2.0
 }
 
 
 struct CardView_Previews: PreviewProvider {
     
     static var previews: some View {
-        let card = Card(contentOne: UIColor.red, contentTwo: 2, contentThree: CGFloat(5), contentFour: "Test card", id: UUID(), isSelected: true, isDealt: true, isMatched: true)
+        let card = Card(contentOne: UIColor.red, contentTwo: 2, contentThree: Double(5), contentFour: "Test card", id: UUID(), isSelected: true, isDealt: true, isMatched: true)
         return CardView(card: card)
     }
     

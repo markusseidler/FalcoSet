@@ -15,22 +15,28 @@ enum SetCardShading {
 }
 
 extension SetCardShading: RawRepresentable {
-    typealias RawValue = CGFloat
+    typealias RawValue = Double
     
-    init?(rawValue: CGFloat) {
+    init?(rawValue: Double) {
         switch rawValue {
         case 0: self = .transparent
-        case 0.5: self = .semiTransparent
+        case 0.3: self = .semiTransparent
         case 1: self = .solid
         default: return nil
         }
     }
     
-    var rawValue: CGFloat {
+    var rawValue: Double {
         switch self {
         case .transparent: return 0
-        case .semiTransparent: return 0.5
+        case .semiTransparent: return 0.3
         case .solid: return 1
         }
+    }
+}
+
+struct SetCardShading_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
