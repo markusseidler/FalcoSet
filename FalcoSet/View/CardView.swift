@@ -14,7 +14,7 @@ struct CardView: View {
     var body: some View {
     
             ZStack {
-                RoundedRectangle(cornerRadius: self.rRectCRCard).stroke(Color.black)
+                RoundedRectangle(cornerRadius: self.rRectCRCard).stroke(Color.black, lineWidth: card.isSelected ? strokeLineWidthSelected : strokeLineWidth)
                 
                 self.cardBuilder()
             }
@@ -37,6 +37,8 @@ struct CardView: View {
     
     @ViewBuilder
     func shapeSelector (shapeString: String, color: UIColor, shading: Double) -> some View {
+
+        
         if shapeString == SetCardShapes.diamond.rawValue {
             ZStack{
                 DiamondShape().fill().opacity(shading)
@@ -59,6 +61,7 @@ struct CardView: View {
             
         }
     }
+    
         
 
     
@@ -70,6 +73,8 @@ struct CardView: View {
     let rRectCRShape: CGFloat = 50.0
     let rRectCRCard: CGFloat = 10.0
     let strokeLineWidth: CGFloat = 2.0
+    let strokeLineWidthSelected: CGFloat = 5.0
+    
 }
 
 

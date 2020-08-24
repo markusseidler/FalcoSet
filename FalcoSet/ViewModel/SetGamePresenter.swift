@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-class SetGamePresenter  {
+class SetGamePresenter: ObservableObject  {
     
-    private var model = SetGamePresenter.createSetGame()
+    @Published private var model = SetGamePresenter.createSetGame()
 
     private static func createSetGame() -> CardModel<UIColor, Int, Double, String> {
         
@@ -23,6 +23,11 @@ class SetGamePresenter  {
 
     var cards: [Card<UIColor, Int, Double, String>] {
         model.cards.filter() {$0.isDealt}
+    }
+    
+    // MARK: - UI Intent
+    func select(card: Card<UIColor, Int, Double, String>) {
+        model.selectCard(card: card)
     }
    
 }

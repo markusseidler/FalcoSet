@@ -12,12 +12,14 @@ import SwiftUI
 
 struct MainGameView: View {
     
-    var gamePresenter: SetGamePresenter
+    @ObservedObject var gamePresenter: SetGamePresenter
     
     var body: some View {
         VStack {
             GridMarkus(gamePresenter.cards) { card in
-                CardView(card: card)
+                CardView(card: card).onTapGesture {
+                    self.gamePresenter.select(card: card)
+                }
             }
         }.padding()
     }

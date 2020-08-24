@@ -23,6 +23,12 @@ struct CardModel<ContentOne, ContentTwo, ContentThree, ContentFour> {
         }
     }
     
+    private var cardsSelected: [Int?] {
+        get {
+            cards.indices.filter {cards[$0].isSelected}
+        }
+    }
+    
     private var numberOfCards: Int {
            cards.count
        }
@@ -47,7 +53,21 @@ struct CardModel<ContentOne, ContentTwo, ContentThree, ContentFour> {
         cardsDealt = setCardsToDealRandomly()
         
     }
+    
+    mutating func selectCard(card: Card<ContentOne, ContentTwo, ContentThree, ContentFour>) {
+        if let selectedIndex = cards.findIndexOfElement(card), !card.isMatched, card.isDealt {
+            self.cards[selectedIndex].isSelected.toggle()
+            self.assessSelection()
+        }
+    }
+    
+    private func assessSelection() {
+        if cardsSelected.count == 3 {
+            
+        }
+    }
 
+    
     
     private func setCardsToDealRandomly() -> [Int]{
         
